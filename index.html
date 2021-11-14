@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="header">
+                <h1 id="heading">Welcome Geekster</h1>
+            </div>
+            <div class="dom-btn">
+                <button class="btn" onclick="morning()">Good Morning</button>
+                <button class="btn" onclick="afternoon()">Good Afternoon</button>
+                <button class="btn" onclick="night()">Good Night</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    function morning() {
+        let element = document.getElementById("heading");
+        element.innerText = "Good Morning Geekster!!";
+        element.style.color = "green";
+    }
+    function afternoon() {
+        let element = document.getElementById("heading");
+        element.innerText = "Good Afternoon Geekster!!";
+        element.style.color = "yellow";
+    }
+    function night() {
+        let element = document.getElementById("heading");
+        element.innerText = "Good Night Geekster!!";
+        element.style.color = "blue";
+    }
+</script>
+</html>
